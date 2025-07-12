@@ -55,7 +55,7 @@ const LeftSidebar = () => {
         </Button>
       </div>
 
-      <ScrollArea className="h-[90vh] mt-4 w-full">
+      <div className="h-[90vh] mt-4 w-full overflow-y-auto">
         <div className="flex flex-col pr-3 gap-y-3">
           {filteredData.map((note) => (
             <Card
@@ -110,7 +110,7 @@ const LeftSidebar = () => {
             </Card>
           ))}
         </div>
-      </ScrollArea>
+      </div>
     </div>
   );
 };
