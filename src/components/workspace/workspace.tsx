@@ -61,6 +61,9 @@ const Workspace = ({ note }: { note: Note }) => {
         case "alignRight":
           chain.setTextAlign("right").run();
           break;
+        case "alignJustify":
+          chain.setTextAlign("justify").run();
+          break;
       }
     },
     [editor]
@@ -76,10 +79,7 @@ const Workspace = ({ note }: { note: Note }) => {
       />
 
       <Toolbar editor={editor} onToggle={toggle} />
-      <EditorContent
-        className="prose prose-lg max-w-none"
-        editor={editor}
-      />
+      <EditorContent className="prose prose-lg max-w-none" editor={editor} />
     </ScrollArea>
   );
 };

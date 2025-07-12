@@ -16,7 +16,7 @@ const Toolbar = ({
   const platform = getPlatform();
 
   return (
-    <div className="flex sticky top-0 z-50 bg-background flex-wrap gap-2 border-b border-slate-200 pb-4 mb-6">
+    <div className="flex sticky top-0 z-50 bg-background flex-wrap gap-2 border-b dark:border-slate-700 border-slate-200 pb-4 mb-6">
       {TOOLBAR_ACTIONS.map(
         ({ key, label, icon: Icon, shortcut, activeClass, inactiveClass }) => {
           const isActive = editor?.isActive(key) ?? false;

@@ -24,7 +24,8 @@ export const TOOLBAR_ACTIONS = [
       linux: "Ctrl+B",
     },
     activeClass: "bg-slate-900 text-white",
-    inactiveClass: "bg-slate-100 text-black hover:bg-slate-200",
+    inactiveClass:
+      "bg-slate-100 dark:bg-slate-300 text-black hover:bg-slate-200",
   },
   {
     key: "italic",
@@ -36,7 +37,8 @@ export const TOOLBAR_ACTIONS = [
       linux: "Ctrl+I",
     },
     activeClass: "bg-slate-900 text-white",
-    inactiveClass: "bg-slate-100 text-black hover:bg-slate-200",
+    inactiveClass:
+      "bg-slate-100 dark:bg-slate-300 text-black hover:bg-slate-200",
   },
   {
     key: "underline",
@@ -48,7 +50,8 @@ export const TOOLBAR_ACTIONS = [
       linux: "Ctrl+U",
     },
     activeClass: "bg-slate-900 text-white",
-    inactiveClass: "bg-slate-100 text-black hover:bg-slate-200",
+    inactiveClass:
+      "bg-slate-100 dark:bg-slate-300 text-black hover:bg-slate-200",
   },
   {
     key: "highlight",
@@ -59,8 +62,9 @@ export const TOOLBAR_ACTIONS = [
       win: "Ctrl+Shift+H",
       linux: "Ctrl+Shift+H",
     },
-    activeClass: "bg-yellow-400 text-white",
-    inactiveClass: "bg-yellow-100 text-black hover:bg-yellow-200",
+    activeClass: "bg-yellow-400 dark:text-black text-white",
+    inactiveClass:
+      "bg-yellow-100 dark:bg-yellow-300 text-black hover:bg-yellow-200",
   },
   {
     key: "blockquote",
@@ -72,7 +76,8 @@ export const TOOLBAR_ACTIONS = [
       linux: "Ctrl+Shift+B",
     },
     activeClass: "bg-indigo-900 text-white",
-    inactiveClass: "bg-indigo-100 text-black hover:bg-indigo-200",
+    inactiveClass:
+      "bg-indigo-100 dark:bg-indigo-300 text-black hover:bg-indigo-200",
   },
   {
     key: "code",
@@ -84,7 +89,8 @@ export const TOOLBAR_ACTIONS = [
       linux: "Ctrl+E",
     },
     activeClass: "bg-purple-900 text-white",
-    inactiveClass: "bg-purple-100 text-black hover:bg-purple-200",
+    inactiveClass:
+      "bg-purple-100 dark:bg-purple-300 text-black hover:bg-purple-200",
   },
   {
     key: "codeBlock",
@@ -96,7 +102,8 @@ export const TOOLBAR_ACTIONS = [
       linux: "Ctrl+Shift+C",
     },
     activeClass: "bg-purple-900 text-white",
-    inactiveClass: "bg-purple-100 text-black hover:bg-purple-200",
+    inactiveClass:
+      "bg-purple-100 dark:bg-purple-300 text-black hover:bg-purple-200",
   },
 
   {
@@ -109,7 +116,8 @@ export const TOOLBAR_ACTIONS = [
       linux: "Ctrl+Shift+8",
     },
     activeClass: "bg-slate-900 text-white",
-    inactiveClass: "bg-slate-100 text-black hover:bg-slate-200",
+    inactiveClass:
+      "bg-slate-100 dark:bg-slate-300 text-black hover:bg-slate-200",
   },
   {
     key: "orderedList",
@@ -121,7 +129,8 @@ export const TOOLBAR_ACTIONS = [
       linux: "Ctrl+Shift+7",
     },
     activeClass: "bg-slate-900 text-white",
-    inactiveClass: "bg-slate-100 text-black hover:bg-slate-200",
+    inactiveClass:
+      "bg-slate-100 dark:bg-slate-300 text-black hover:bg-slate-200",
   },
   {
     key: "alignLeft",
@@ -133,7 +142,8 @@ export const TOOLBAR_ACTIONS = [
       linux: "Ctrl+Shift+L",
     },
     activeClass: "bg-slate-900 text-white",
-    inactiveClass: "bg-slate-100 text-black hover:bg-slate-200",
+    inactiveClass:
+      "bg-slate-100 dark:bg-slate-300 text-black hover:bg-slate-200",
   },
   {
     key: "alignCenter",
@@ -145,7 +155,8 @@ export const TOOLBAR_ACTIONS = [
       linux: "Ctrl+Shift+E",
     },
     activeClass: "bg-slate-900 text-white",
-    inactiveClass: "bg-slate-100 text-black hover:bg-slate-200",
+    inactiveClass:
+      "bg-slate-100 dark:bg-slate-300 text-black hover:bg-slate-200",
   },
   {
     key: "alignRight",
@@ -157,7 +168,8 @@ export const TOOLBAR_ACTIONS = [
       linux: "Ctrl+Shift+R",
     },
     activeClass: "bg-slate-900 text-white",
-    inactiveClass: "bg-slate-100 text-black hover:bg-slate-200",
+    inactiveClass:
+      "bg-slate-100 dark:bg-slate-300 text-black hover:bg-slate-200",
   },
   {
     key: "alignJustify",
@@ -169,7 +181,8 @@ export const TOOLBAR_ACTIONS = [
       linux: "Ctrl+Shift+J",
     },
     activeClass: "bg-slate-900 text-white",
-    inactiveClass: "bg-slate-100 text-black hover:bg-slate-200",
+    inactiveClass:
+      "bg-slate-100 dark:bg-slate-300 text-black hover:bg-slate-200",
   },
 ];
 

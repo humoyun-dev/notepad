@@ -12,6 +12,7 @@ import { useDataStore } from "@/stores/data.store";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+import { ModeToggle } from "../theme.toggle";
 
 const LeftSidebar = () => {
   const { notes, activeId, setActiveNote, deleteNote, createNote } =
@@ -43,6 +44,7 @@ const LeftSidebar = () => {
   return (
     <div>
       <div className="flex items-center gap-x-2">
+        <ModeToggle />
         <Input
           placeholder="Search notes ..."
           type="search"
@@ -61,7 +63,7 @@ const LeftSidebar = () => {
               className={cn(
                 "shadow-xs relative w- gap-2 hover:border-primary/40 h-[140px]",
                 {
-                  "border-primary/40 bg-primary-foreground":
+                  "border-primary/40 bg-primary-foreground dark:bg-background":
                     activeId == note.id,
                 }
               )}
