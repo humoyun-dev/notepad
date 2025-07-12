@@ -120,6 +120,28 @@
   }
 }
 
+.dark .prose blockquote {
+  background-color: #1f2937;
+  color: #d1d5db;
+  border-top-color: #4b5563;
+  border-bottom-color: #4b5563;
+}
+
+.dark .prose blockquote::before,
+.dark .prose blockquote::after {
+  color: #6b7280;
+}
+
+.dark .prose blockquote cite,
+.dark .prose blockquote footer {
+  color: #9ca3af;
+}
+
+.dark .prose blockquote cite::before,
+.dark .prose blockquote footer::before {
+  color: #6b7280;
+}
+
 
 .prose blockquote {
   position: relative;
