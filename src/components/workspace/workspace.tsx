@@ -72,14 +72,14 @@ const Workspace = ({ note }: { note: Note }) => {
   if (!editor) return null;
 
   return (
-    <ScrollArea className="max-w-6xl h-[95vh] mx-auto p-6">
+    <ScrollArea className="max-w-6xl h-[95vh] mx-auto md:p-6">
       <Title
         title={note.title}
         setTitle={(e) => updateNote(note.id, { title: e })}
       />
 
       <Toolbar editor={editor} onToggle={toggle} />
-      <EditorContent className="prose prose-lg max-w-none" editor={editor} />
+      <EditorContent className="prose prose-lg max-w-full w-full break-word overflow-x-auto" editor={editor} />
     </ScrollArea>
   );
 };
