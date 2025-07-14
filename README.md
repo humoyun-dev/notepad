@@ -1,69 +1,85 @@
-# React + TypeScript + Vite
+# 🧠 React Notepad – Notion-Style Rich Text Editor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A powerful and minimalist Notepad app built with **React**, **Zustand**, **Tiptap**, and **TailwindCSS**, fully working in the browser via **localStorage**.  
+Inspired by Notion. No backend required.
 
-Currently, two official plugins are available:
+![Preview](./notepad.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🎥 YouTube Tutorial
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+📺 Watch the full build tutorial on YouTube:  
+🔗 [React Notepad | CRUD + Rich Text Editor | No Backend Required](https://youtu.be/FIERmgWJJFI)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## ✨ Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- 📝 Notion-style **rich text editor**
+- ⚙️ Global state management with **Zustand**
+- 💾 **LocalStorage CRUD**: create, edit, delete notes
+- 🎨 Responsive and beautiful UI via **TailwindCSS**
+- 🧱 Block-level formatting (bold, italic, code, lists, etc.)
+- ⚡️ Fast build using **Vite** and **TypeScript**
+
+---
+
+## 🚀 Quick Start
+
+```bash
+git clone https://github.com/humoyun-dev/notepad
+cd notepad
+npm install
+npm run dev
+````
+
+App will run at: `http://localhost:5173`
+
+---
+
+## 🛠 Tech Stack
+
+* React + TypeScript
+* Zustand
+* Tiptap (ProseMirror-based rich text editor)
+* TailwindCSS
+* Lucide React Icons
+* Vite
+
+---
+
+## 📦 Notes Format
+
+Each note is stored like this in `localStorage`:
+
+```json
+{
+  "id": "uuid",
+  "title": "Note title",
+  "content": "<p>rich text HTML...</p>"
+}
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📌 To-Do (Ideas)
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* [ ] Drag-and-drop note blocks
+* [ ] Dark mode toggle
+* [ ] Search and filter
+* [ ] Export/import notes
+* [ ] Firebase/MongoDB sync version
+
+---
+
+## 📜 License
+
+MIT — free to use, modify, and share.
+
+---
+
+## 🙌 Author
+
+Created by [HumoyunDev](https://github.com/humoyun-dev)
+📹 YouTube Channel: [youtube.com/@humoyun-dev](https://www.youtube.com/@humoyun-dev)
